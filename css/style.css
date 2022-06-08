@@ -1,0 +1,465 @@
+* {margin:0; padding:0; text-decoration: none;}
+
+.noAccess {
+    text-align: center;
+    color: red;
+}
+
+
+/* HEADER & NAV */
+
+img {max-width: 100%;}
+.wrapper{max-width: 1200px; margin: 0 auto;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.pEdited {
+    white-space: pre-wrap;
+    word-break: keep-all;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(222, 222, 222, 0.650);
+    border-bottom: 1px solid rgba(222, 222, 222, 0.650);
+}
+
+header {padding-top: 43px;}
+
+nav > ul {
+    display: flex; 
+    width: 100%; 
+}
+nav > ul > li {
+    flex: 1; 
+    display: flex; 
+}
+nav li > a { 
+    padding: 2px 0px; 
+    display: flex; 
+    width: 100%; 
+    color: black; 
+    justify-content: center; 
+    font-weight: bold;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+nav li > a:hover {
+    color: black;
+    text-transform: none;
+    text-decoration: none;
+    background-color: rgb(248, 248, 248);
+}
+
+header > div > a > img {
+    width: 210px;
+    margin-bottom: 2px;
+}
+
+header > div > p {
+    margin: 0;
+    padding: 0;
+}
+
+.selectedPage {
+    border-bottom: 2px solid gray;
+}
+
+/* HOME */
+
+.aboveNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles_header {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.articles {
+    display: flex;
+    gap: 2.5%;
+}
+
+.articles article {
+    flex: 1 1 auto;
+}
+
+.articles p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.articles a:hover {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.mainSection {
+    border-top: 1px solid rgba(222, 222, 222, 0.450);
+    padding-bottom: 40px;
+}
+
+.mainSection article {
+    max-width: 18%;
+}
+
+/* NEWS */
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstSection > article {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    padding-top: 25px;
+    text-align: center;
+}
+
+
+.firstSection > img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.firstSection,.secondSection p {
+    font-size: 14px;
+}
+
+.firstSection > article > article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.autor {margin-right: 10px;}
+.datum {margin: 0 10px;}
+.kategorija {margin-left: 10px;}
+
+.secondSection h4 {
+    padding: 5px 0 15px 0;
+}
+
+.secondSection {
+    padding: 25px 0 50px 0;
+} 
+
+/* UNOS */
+
+
+.naslov label {
+    text-transform: uppercase;
+}
+
+.naslov {
+    padding: 35px 0;
+}
+
+.forma {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.forma textarea {
+    resize: none;
+    width: 450px;
+}
+
+.forma #naslov {
+    width: 400px;
+}
+
+.forma section > div {
+    padding: 10px 0;
+}
+
+.naslov > h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+#redButton {
+    background-color: #ff0021;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#greenButton {
+    background-color: #5cdb5c;
+    padding: 10px 35px;
+    border-radius: 15px;
+    border: 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#title {
+    width: 450px;
+    height: 31px;
+}
+
+#category {
+    width: 300px;
+    height: 31px;
+}
+
+#pphoto {
+    width: 300px;
+    height: 31px;
+}
+
+.slikaForm img {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+/* KATEGORIJA */
+
+.categorySections {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ADMINISTRACIJA */
+
+.adminTable {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.adminTable th {
+    width: 14%;
+    padding-bottom: 25px;
+}
+
+.adminTable tr {
+    text-align: center;
+}
+
+.drugiTR {
+    background-color: rgba(230, 230, 230, 0.479);
+}
+
+.adminTable td {
+    font-size: 15px;
+}
+
+.adminTable img{
+    width: 75%;
+}
+
+.adminTable .fromButton {
+    padding: 5px;
+}
+
+.adminTable button {
+    border: 0px;
+    background-color: transparent;
+}
+
+.adminButton {
+    border: 0px;
+    background-color: transparent;
+}
+
+.adminForm {
+    margin: 25px 0;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+
+.adminForm button {
+    background-color: gray;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: white;
+    margin: 0 10px;
+    border: 2px solid transparent;
+}
+
+.adminForm button:hover {
+    color: black;
+    background-color: white;
+    border: 2px dotted black;
+
+}
+
+/* LOGIN */
+
+.loginSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.formaLogin  {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+#submitLogin {
+    background-color: gray;
+    border: 1px solid transparent;
+    color: white;
+    padding: 5px 0;
+    border-radius: 20px;
+}
+
+#submitRegister {
+    background-color: gray;
+    border: 1px solid transparent;
+    color: white;
+    padding: 5px 0;
+    border-radius: 20px;
+}
+
+#submitLogin:hover {
+    background-color: white;
+    border: 1px solid gray;
+    color: gray;
+}
+
+#submitRegister:hover {
+    background-color: white;
+    border: 1px solid gray;
+    color: gray;
+}
+
+/* FOOTER */
+
+
+.abosluteFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+html, body {height: 100%;}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {flex: 1 0 auto;}
+
+footer {
+    background-color: rgba(222, 222, 222, 0.450);
+    padding: 24px 0;
+    flex-shrink: 0;
+}
+
+
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+footer div > a {
+    color: rgb(148, 148, 148);
+}
+
+footer div > a:hover {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(42, 87, 139);
+}
+
+.clanakFooter {
+    background-color: rgb(100, 100, 100);
+}
+
+.clanakFooter div {
+    justify-content: flex-start;
+}
+
+.clanakFooter a {
+    width: 15%;
+}
+
+.clanakFooter img {
+    width: 100%;
+}
+
+
+@media (max-width: 1216px) {
+    .articles_header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 786px) {
+
+    .formaLogin {
+        width: 50%;
+    }
+    
+    .abosluteFooter {
+        position:unset;
+        margin-top: 75px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    nav li > a {
+        padding: 10px 0;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    .mainSection article {
+        max-width: 70%;
+    }
+
+    main .secondSection,.firstSection {
+        max-width: 90%;
+    } 
+
+    .forma {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer div {
+        justify-content: center;
+    }
+
+}
