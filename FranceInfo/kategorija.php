@@ -10,6 +10,7 @@
         <meta charset="UTF-8">
         <title>FranceInfo | <?php echo ucfirst($id); ?></title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/b05e340512.js" crossorigin="anonymous"></script>
