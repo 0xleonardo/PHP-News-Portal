@@ -44,47 +44,52 @@
                         }
 
                         $user = $_SESSION['user'];
-                        echo "<h2> $user VEĆ STE PRIJAVLJENI, VRAĆAM VAS NA POČETNU STRANICU</h2>";
+                        echo "</ul>
+                        </nav>
+                        <section class='loginSection wrapper'>
+                        <h2> $user VEĆ STE PRIJAVLJENI, VRAĆAM VAS NA POČETNU STRANICU...</h2>
+                        </section>";                  
                         redirectAlreadyLoggedIn();
                     }
                     
                     else {
-                        echo '<li><a href="login.php">login</a></li>';
+                        echo '<li><a href="login.php">login</a></li>
+                        </ul>
+                            </nav>
+                        </header>
+                        <main class="content">
+                            <section class="loginSection wrapper">
+                                    <h2>REGISTRACIJA KORISNIKA</h2>
+                                    <span id="errorRegister"></span>
+                                    <form action="" method="POST" class="formaLogin" enctype="multipart/form-data">
+                                            <label for="ime">Ime </label>
+                                            <input type="text" name="ime" id="ime"> 
+                                            <span id="errorIme"></span><br>
+
+                                            <label for="prezime">Prezime </label>
+                                            <input type="text" name="prezime" id="prezime"> 
+                                            <span id="errorPrezime"></span><br>
+
+                                            <label for="username">Korisničko ime </label>
+                                            <input type="text" name="username" id="username"> 
+                                            <span id="errorUsername"></span><br>
+
+                                            <label for="lozinka">Lozinka</label>
+                                            <input type="password" name="lozinka" id="lozinka"> <br>
+
+                                            <label for="lozinka">Ponovno unesite lozinku </label>
+                                            <input type="password" name="plozinka" id="plozinka"> 
+                                            <span id="errorPassword"></span><br>
+
+                                            <button type="submit" value="login" name="submitRegister" id="submitRegister">REGISTER</button>
+                                    </form>
+                                    <span>Korisnik ste? <a href="login.php">Ulogirajte</a> se na vaš račun sada!</span>
+                            </section>
+                        </main>';
                     }
                     
                     ?>
-				</ul>
-			</nav>
-		</header>
-        <main class="content">
-            <section class="loginSection wrapper">
-                    <h2>REGISTRACIJA KORISNIKA</h2>
-                    <span id="errorRegister"></span>
-                    <form action="" method="POST" class="formaLogin" enctype="multipart/form-data">
-                            <label for="ime">Ime </label>
-                            <input type="text" name="ime" id="ime"> 
-                            <span id="errorIme"></span><br>
-
-                            <label for="prezime">Prezime </label>
-                            <input type="text" name="prezime" id="prezime"> 
-                            <span id="errorPrezime"></span><br>
-
-                            <label for="username">Korisničko ime </label>
-                            <input type="text" name="username" id="username"> 
-                            <span id="errorUsername"></span><br>
-
-                            <label for="lozinka">Lozinka</label>
-                            <input type="password" name="lozinka" id="lozinka"> <br>
-
-                            <label for="lozinka">Ponovno unesite lozinku </label>
-                            <input type="password" name="plozinka" id="plozinka"> 
-                            <span id="errorPassword"></span><br>
-
-                            <button type="submit" value="login" name="submitRegister" id="submitRegister">REGISTER</button>
-                    </form>
-                    <span>Korisnik ste? <a href="login.php">Ulogirajte</a> se na vaš račun sada!</span>
-            </section>
-        </main>
+				
         <footer>
             <div class="wrapper">
                 <a href="https://www.france.tv/">france.tv</a>

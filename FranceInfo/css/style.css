@@ -365,16 +365,6 @@ header > div > p {
 
 /* FOOTER */
 
-
-.abosluteFooter {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
-
 html, body {height: 100%;}
 
 body {
@@ -409,6 +399,7 @@ footer div > a:hover {
 
 .clanakFooter {
     background-color: rgb(100, 100, 100);
+    padding: 15px 0;
 }
 
 .clanakFooter div {
@@ -416,7 +407,7 @@ footer div > a:hover {
 }
 
 .clanakFooter a {
-    width: 15%;
+    width: 150px;
 }
 
 .clanakFooter img {
@@ -428,6 +419,13 @@ footer div > a:hover {
     .articles_header {
         text-align: center;
     }
+    .adminTable tr img {
+        width: 100px;
+        height: 60px;
+    }
+    .clanakFooter div {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 786px) {
@@ -438,7 +436,7 @@ footer div > a:hover {
 
     .mainSection .articles article img {
         width: auto;
-        height: auto;;
+        height: auto;
     }
 
     .mainSection .articles article {

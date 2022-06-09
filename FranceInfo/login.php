@@ -89,7 +89,7 @@
                 </section>
             </main>';
             }
-            echo '<footer class="abosluteFooter">
+            echo '<footer>
             <div class="wrapper">
                 <a href="https://www.france.tv/">france.tv</a>
             </div>
