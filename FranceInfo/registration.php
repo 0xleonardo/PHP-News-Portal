@@ -46,9 +46,12 @@
                         $user = $_SESSION['user'];
                         echo "</ul>
                         </nav>
+                        </header>
+                        <main class='content'>
                         <section class='loginSection wrapper'>
                         <h2> $user VEĆ STE PRIJAVLJENI, VRAĆAM VAS NA POČETNU STRANICU...</h2>
-                        </section>";                  
+                        </section>
+                        </main>";                  
                         redirectAlreadyLoggedIn();
                     }
                     
