@@ -141,7 +141,14 @@
                                     <td>'.$row['ime'].'</td>
                                     <td>'.$row['prezime'].'</td>
                                     <td>'.$row['korisnicko_ime'].'</td>
-                                    <td>'.$row['razina'].'</td>';
+                                    <td>';
+                                    if ($row['razina'] == 0) 
+                                        echo "Korisnik";
+                                    else if ($row['razina'] == 1)
+                                        echo "Novinar";
+                                    else 
+                                        echo "Administrator";
+                                    '</td>';
                                     
                                     echo '<td>
                                         <button type="submit" class="fromButton" value="'.$row['id'].'" name="editUser" title="Uredi korisnika \''.$row['korisnicko_ime'].'\'"><i class="fa-solid fa-user-pen"></i></button>

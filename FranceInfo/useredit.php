@@ -90,21 +90,21 @@
                                             if ($row['razina'] == 0)
                                             echo '
                                                 <option value="" disabled>Odabir razine</option>
-                                                <option value="0" selected>0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>';
+                                                <option value="0" selected>Korisnik</option>
+                                                <option value="1">Novinar</option>
+                                                <option value="2">Administrator</option>';
                                             else if ($row['razina'] == 1)
                                                 echo '
                                                 <option value="" disabled>Odabir razine</option>
-                                                <option value="0">0</option>
-                                                <option value="1" selected>1</option>
-                                                <option value="2">2</option>';
+                                                <option value="0">Korisnik</option>
+                                                <option value="1" selected>Novinar</option>
+                                                <option value="2">Administrator</option>';
                                             else 
                                                 echo '
                                                 <option value="" disabled>Odabir razine</option>
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2" selected>2</option>';
+                                                <option value="0">Korisnik</option>
+                                                <option value="1">Novinar</option>
+                                                <option value="2" selected>Administrator</option>';
                                         
 
                                     echo '</select>
